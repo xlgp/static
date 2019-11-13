@@ -1,4 +1,7 @@
 /**
+ * 在引入此文件前,需引入css/xc-search-comp.css
+ */
+/**
  * [mixin description] Vue mixins
  * @type {Object}
  */
@@ -12,7 +15,7 @@ define([
     //创建search comp外层盒子
     let APP_BOX = 'xc-app-box';
     util.el(APP_BOX);
-    util.loadAsync.css('css/xc-search-comp.css');
+    // util.loadAsync.css('css/xc-search-comp.css');
     /**
      * 按钮组建,
      * @type {Object}
