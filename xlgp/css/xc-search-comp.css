@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #434d69;
+    padding: 2em 0;
+}
+
+header,
+footer {
+    background-image: url(http://123.127.164.43:17774/spisp-user-ui/img/indexLinkBg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    color: #fff;
+}
+
+header>div {
+    margin: 10px 0 0 0;
+}
+
+a {
+    color: #496ddb;
+}
+
+.xc-bg {
+    padding: 35px 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.xc-wapper {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 0;
+}
+
+.xc-wapper>* {
+    font-size: initial;
+}
+
+.xc-btn-group .xc-btn {
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    background-color: #1a1a1ab3;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 1px 8px 3px #6e6e6e;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color .3s, text-shadow .1s, box-shadow .1s;
+    text-shadow: 0 0 0 #fff;
+}
+
+.xc-btn-group .xc-btn:active {
+    text-shadow: 0px 2px 4px white;
+    box-shadow: 0 2px 8px 3px #2fa13e;
+}
+
+.xc-title {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.xc-title span {
+    font-size: 25px;
+    color: white;
+    background-color: #3f3f3f87;
+    padding: 2px 25px;
+    box-shadow: 0px 0px 20px 12px #3f3f3f87;
+}
+
+.xc-btn-group .xc-btn:hover {
+    background-color: #08b920d5;
+}
+
+.xc-btn-group .xc-btn:last-child {
+    margin-right: 0px;
+}
+
+.xc-textarea {
+    display: inline-block;
+    width: 200px;
+    font-size: initial;
+    resize: vertical;
+    min-height: 400px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 10px #cdcdcd24 solid;
+    background-color: #242424c2;
+    color: #fff;
+    outline: none;
+}
+
+.xc-placeholder {
+    position: relative;
+}
+
+.xc-placeholder::before {
+    content: attr(placeholder);
+    position: absolute;
+    color: #a4a4a4;
+    display: block;
+}
+
+.xc-placeholder::after {
+    content: '输入区域';
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    color: #646464;
+    font-size: 25px;
+}
+
+.xc-wapper .xc-table {
+    display: inline-block;
+    font-size: initial;
+    width: calc(100% - 220px);
+    vertical-align: top;
+    background-color: #4f4f4fa6;
+    min-height: 400px;
+}
+
+.xc-wapper table {
+    width: 100%;
+    margin: 0 auto;
+    border: 0px;
+    color: #fefefe;
+}
+
+.xc-wapper th,
+.xc-wapper td {
+    text-align: center;
+    border: none;
+    padding: 5px;
+}
+
+.xc-wapper td {
+    border-top: 1px solid #464646b5;
+}
+
+.xc-wapper .xc-btn-group {
+    position: relative;
+    text-align: center;
+    font-size: 0px;
+    margin-bottom: 20px;
+}
+
+.xc-wapper th cite {
+    font-size: 14px;
+    border: 1px dashed #eee;
+    padding: 1px 6px;
+    color: #cfcfcf;
+    background-color: #4f4f4f69;
+    margin-left: 5px;
+    cursor: pointer;
+    font-style: normal;
+    display: inline-block;
+}
+
+.xc-wapper .xc-overlay {
+    position: absolute;
+    background-color: #333333d4;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(http://123.127.164.43:17774/spisp-user-ui/img/loading-1.gif);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: calc(50% - 70px) center;
+    color: white;
+    line-height: 40px;
+    display: none;
+}
+
+footer div {
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
