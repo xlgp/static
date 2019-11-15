@@ -121,6 +121,15 @@ define([
                 }
                 this.resultList.push(obj);
             },
+            initResultList:function(){
+                for (let index = 0; index < this.paramList.length; index++) {
+                    let obj = {};
+                    for (let item in this.itemDict) {
+                        obj[item] = this.paramList[index][item];
+                    }
+                    this.resultList.push(obj);
+                }
+            },
             xcBtnHandler: function () {
                 console.info('xcBtnHandler function in mixin');
             },
