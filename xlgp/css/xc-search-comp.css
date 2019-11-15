@@ -150,7 +150,9 @@ a {
 .xc-wapper td {
     border-top: 1px solid #464646b5;
 }
-
+.xc-wapper th:first-child{
+    width:140px;
+}
 .xc-wapper .xc-btn-group {
     position: relative;
     text-align: center;
