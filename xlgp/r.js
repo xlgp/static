@@ -5,31 +5,15 @@ requirejs.config({
             Vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue',
             XCVue: 'https://gitee.com/xlgp/static/raw/master/xlgp/xc-search-comp',
         },
-        shim:{
-            XCVue:['https://gitee.com/xlgp/static/raw/master/xlgp/css/xc-search-comp.css'],
-        }
 })
 
 require(['XCVue', 'util'], function(XCVue, util){
     let Vm = new XCVue({
         data: {
             id: 'xc-car-app',
-            title: '车牌号查询',
-            itemDict: {
-                'carNo': '车牌号',
-                'StatusMessage': '有无结果'
-            },
-            btns: [{
-                text: 'carNo查询',
-                id: 'carno'
-            }],
         },
         methods: {
             xcInputHandler: function (type) {
-                this.resultList = [];
-                for (let index = 0; index < this.areaList.length; index++) {
-                    getreinfo(this.areaList[index], this.updateResultList);
-                }
             },
         }
     });
